@@ -3,6 +3,10 @@ Auth PHP system **simple** and **secure** with **OTP** functionality !
 
 ***PBKDF2*** used for more secure and and a big choice of hash algorithm
 
+### Next Implementations
+     - Compatibility with an other databases
+     - Session System
+
 # Usage
 In first, you must download and place the lib folder in at the root of your site
 
