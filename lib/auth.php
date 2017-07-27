@@ -1,4 +1,14 @@
 <?php
+/**
+ * PHP Class for Auth PHP system simple and secure with OTP functionality
+ *
+ * @author Arkadia977
+ *
+ * @link https://github.com/Arkadia977/Auth_php
+ *
+ * @Version 1.0.0
+ */
+
 if(session_id() == ""){ session_start(); }
 
 class Auth{
