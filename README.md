@@ -26,6 +26,34 @@ $auth = new Auth([
 ]);
 ```
 
+### __Essential parameters__
+**db_address** : Host name or IP address of MySQL.
+
+**db_user** : The MySQL user.
+
+**db_pwd** : The MySQL password.
+
+**db_name** : The MySQL database.
+
+**db_table** : The user table use in MySQL.
+
+
+
+### __Dispensable parameters__
+***db_columnIdent*** : The name of identifiant column used for the connection.
+
+***db_columnPwd*** : The name of password column used for the connection.
+
+***use_otp*** : Must be on *True* for use OTP system.
+
+***otp_columnName*** : The name of OTP secret key column used for the connection if otp is used.
+
+***hash_algo*** : Algo used for password hash.
+
+***hash_salt*** : Hash used for password hash.
+
+***hash_iter*** : Iteration used for password hash in PBKDF2.
+
 # Make a new user connection
 Function ***connection***
 ```php
