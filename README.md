@@ -46,15 +46,15 @@ $auth->hashPwd( string $password [, string $algo = "sha512" [, string $salt = ""
 ```
 Code :
 ```php
-$auth->hashPwd("test");
+$auth->hashPwd("password");
 
-$auth->hashPwd("test")["hashPassword"];
+$auth->hashPwd("password")["hashPassword"];
 ```
 Output :
 ```php
-array(3) { ["hashPwd"]=> bool(true) ["error"]=> string(0) "" ["hashPassword"]=> string(128) "f054d357dfc8464f110cd32b36423acead8e1bcbf1bd8197da2beccd828936859751a0b88f6983bc0e9cd99702748069bd29c7d7fbbe94cb1e7bf9fdc64805aa" } 
+array(3) { ["hashPwd"]=> bool(true) ["error"]=> string(0) "" ["hashPassword"]=> string(128) "f4ca507c07d0bd31bc779a08756826a6fd9dd97d43ac25e4b29a0933abea03f31fa1234792ff981f335ba91b0ab40e32643c5cc0dbd343ed6b1c61f1ee6ad559" } 
 
-"f054d357dfc8464f110cd32b36423acead8e1bcbf1bd8197da2beccd828936859751a0b88f6983bc0e9cd99702748069bd29c7d7fbbe94cb1e7bf9fdc64805aa" 
+"f4ca507c07d0bd31bc779a08756826a6fd9dd97d43ac25e4b29a0933abea03f31fa1234792ff981f335ba91b0ab40e32643c5cc0dbd343ed6b1c61f1ee6ad559" 
 ```
 
 # Logout user
