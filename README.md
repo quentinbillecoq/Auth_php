@@ -3,7 +3,8 @@ Auth PHP system **simple** and **secure** with **OTP** functionality !
 
 ***PBKDF2*** used for more secure and and a big choice of hash algorithm
 
-### Next Implementations
+
+### Next Implementations :
      - Compatibility with an other databases
      - Session System
 
