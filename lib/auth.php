@@ -6,7 +6,7 @@
  *
  * @link https://github.com/Arkadia977/Auth_php
  *
- * @Version 1.0.0
+ * @version 1.0.0
  */
 
 if(session_id() == ""){ session_start(); }
