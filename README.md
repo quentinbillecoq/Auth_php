@@ -8,6 +8,8 @@ Auth PHP system **simple** and **secure** with **OTP** functionality !
      - Compatibility with an other databases
      - Session System
 
+    Version : 1.0.0
+
 # Usage
 In first, you must download and place the lib folder in at the root of your site
 
