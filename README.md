@@ -60,6 +60,10 @@ $auth = new Auth([
 
 * ***hash_iter*** : Iteration used for password hash in PBKDF2.
 
+```php
+" print_r(hash_algos()); " : Return a list of supported hashing algorithms who can be used here
+```
+
 # Make a new user connection
 Function ***connection***
 ```php
