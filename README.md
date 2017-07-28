@@ -131,3 +131,30 @@ array(3) { ["getAccount"]=> bool(true) ["error"]=> string(0) "" ["data"]=> strin
 
 "usertest"
 ```
+
+# Use otp functionality
+The parameter "use_otp" must be on True and "otp_columnName" must be the name of your column used to store the OTP secret key.
+
+The OTP secret key must be a base32 string. Its size must be between 6 and 128 characters.
+
+```php
+Example of an OTP secret key : JBSWY3DPEHPK3PXD
+```
+
+The OTP password provided by a 2FA application must be given in the login function with the user's credentials.
+```php
+$auth->connection("usertest","test",123456);
+```
+Here "123456" represent the OTP password.
+
+The otp secret key must be a string on "0" to define that this account not use with otp system.
+
+If you don't give OTP password but that this account uses OTP system, the function return an error :
+```php
+array(3) { ["connection"]=> bool(false) ["error"]=> string(24) "Connection need otp code" ["otpneed"]=> bool(true) }
+```
+or this if the OTP password isn't valid
+```php
+array(3) { ["connection"]=> bool(true) ["error"]=> string(19) "OTP key isn't valid" ["otpneed"]=> bool(true) }
+```
+else all is good, the function return that the connection is valid
