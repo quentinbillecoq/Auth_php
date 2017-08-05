@@ -6,7 +6,7 @@ Auth PHP system **simple** and **secure** with **OTP** functionality !
     Version : 1.0.0
 
 ### Next Implementations :
-     - Compatibility with an other databases
+     - Compatibility with other databases
      - Session System
 
 # Usage
